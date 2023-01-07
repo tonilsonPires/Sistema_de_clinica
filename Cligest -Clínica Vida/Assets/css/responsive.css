@@ -1,0 +1,252 @@
+
+/*=================FORMTANDO A RESPONSIVIDADE DO LOGIN=============================*/
+@media (max-width: 870px){
+  .container{
+      min-height: 800px;
+      height: 100vh;
+  }
+
+  .container::before{
+      width: 1500px;
+      height: 1500px;
+      left: 30%;
+      bottom: 62%;
+      transform: translateX(-50%);
+      right: initial;
+      top: initial;
+      transition: 2s ease-in-out;
+  }
+
+  .signin-signup{
+      width: 100%;
+      left: 50%;
+      top: 95%;
+      transform: translate(-50%, -100%);
+      transition: 1 .8s ease-in-out;
+  }
+
+  .panels-container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel{
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      padding: 2.5rem 8%;
+  }
+
+  .painel .content{
+      padding-right: 15%;
+      transition: .9s .8s ease-in-out;
+  }
+
+  .panel h3{
+      font-size: 1.2rem;
+  }
+  
+  .panel p{
+      font-size: 0.7rem;
+      padding: 0.5rem 0;
+  }
+
+  .btn.btn.transparent{
+      width: 110px;
+      height: 35px;
+      font-size: 0.7rem;
+  }
+  
+  .image{
+      width: 200px;
+      transition: .9s .6s ease-in-out;
+  }
+
+  .left-panel{
+      grid-row: 1 / 2;
+  }
+
+  .right-panel{
+      grid-row: 3 / 4;
+  }
+
+  .panels-container{
+      z-index: 10;
+      grid-template-columns: 1fr;
+  }
+
+  .right-panel .content,
+  .right-panel .image{
+      transform: translateX(300px);
+  }
+
+  .container.container.sign-up-mode::before{
+      transform: translate(-50%, 100%);
+      bottom: 32%;
+      right: initial;
+  }
+
+  .container.container.sign-up-mode .left-image,
+  .container.container.sign-up-mode .left-content{
+      transform: translateY(-300px);
+  }
+
+  .container.container.sign-up-mode .signin-signup{
+      top: 5%;
+      transform: translate(-50%, 0);
+      left: 50%;
+  }
+}
+
+@media (max-width: 570px){
+  form{
+      padding: 0 1.5rem;
+  }
+
+  .image{
+      display: none;
+  }
+
+  .panel-content{
+      padding: .5rem 1rem;
+  }
+  .container::before{
+      bottom: 72%;
+      left: 50%;
+      transform: translate();
+  }
+  .container.sign-up-mode::before{
+      bottom: 28%;
+      left: 50%
+  }
+}
+
+
+/*=================TERMINO  RESPONSIVIDADE DO LOGIN=============================*/
+
+
+/* responsividade da sessao principal */
+
+@media screen and (max-width:1350px) {
+    .cards,
+    .doctors--cards {
+        overflow-x: scroll;
+    }
+  }
+  
+  @media screen and (max-width:1024px) {
+    table {
+        min-width: 600px;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .logo {
+        padding-left: 30px;
+        width: fit-content;
+    }
+    .search--notification--profile {
+        padding: 0 20px;
+        margin-left: auto;
+    }
+    .main--content {
+        padding: 0 20px;
+    }
+    .sidebar {
+        padding: 20px;
+    }
+    .sidebar.active {
+        width: 85px;
+    }
+    .main--content.active {
+        width: calc(100% - 85px);
+    }
+  }
+  
+  @media screen and (max-width:590px) {
+    .search,
+    .lock,
+    .chat {
+        display: none;
+    }
+    .notification--profile {
+        margin-left: auto;
+    }
+    .search--notification--profile {
+        width: fit-content;
+    }
+    .sidebar {
+        transform: translateX(-100%);
+        z-index: 10;
+        background-color: #fff;
+    }
+    .sidebar.active {
+        transform: translateX(0);
+        width: 300px;
+    }
+    .sidebar.active .sidebar--item {
+        display: block;
+    }
+    .main--content {
+        width: calc(100% - 0px);
+    }
+    .main--content.active {
+        width: calc(100% - 0px);
+    }
+  }
+  
+  @media screen and (max-width:450px) {
+    .doctor--filter {
+        display: none;
+    }
+    .main--content {
+        padding: 0 10px;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    .search--notification--profile {
+        padding: 0 10px;
+    }
+    .sidebar {
+        padding: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+  /*RESPNSVIDADE DO MENU*/
+
+  
+@media screen and (max-width: 400px){
+    .sidebar{
+      width: 240px;
+    }
+    .sidebar.close{
+      width: 78px;
+    }
+    .sidebar .profile-details{
+      width: 240px;
+    }
+    .sidebar.close .profile-details{
+      background: none;
+    }
+    .sidebar.close .profile-details{
+      width: 78px;
+    }
+    .home-section{
+      left: 240px;
+      width: calc(100% - 240px);
+    }
+    .sidebar.close ~ .home-section{
+      left: 78px;
+      width: calc(100% - 78px);
+    }
+  }
+  

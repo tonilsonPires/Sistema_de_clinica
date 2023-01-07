@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Design de KitandaSoft -->
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> OSIPITALISOFT </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- link do Boxiocns para usar icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      
+      <span class="logo_name">Cligest</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Pagina Inicial</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="principal.html">Pagina Inicial</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Cadastro</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Cadastro</a></li>
+          <li><a href="Adicinar_Pacientes.html">Pacientes</a></li>
+          <li><a href="adicionar_Dr.html">Doutores</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Listagem</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Listagem</a></li>
+          <li><a href="listagemPaciente.html">Pacientes</a></li>
+          <li><a href="listar_dr.html">Doutores</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="dados_estatísticos.html">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">EStátistica</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="dados_estatísticos.html">EStátistica</a></li>
+        </ul>
+      </li>
+     <li>
+        <a href="sobre.html">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Sobre</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="sobre.html">Sobre</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      
+        <a href="../index.html">
+        <i class='bx bx-log-out'> </i>
+        <span class="link_name">Sair</span>
+        </a> 
+      <div class="sair"></div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+  </section>
+
+  <h2>Adicionar Doutores</h2>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="text" name="empCode" id="empCode" required="name">
+                    </div>
+                    <div>
+                        <label>Endereço</label>
+                        <input type="text" name="salary" id="salary" required>
+                    </div>
+                    <div>
+                        <label>funcao</label>
+                        <input type="text" name="city" id="city" required>
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

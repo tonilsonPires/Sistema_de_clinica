@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIPITALISOFT</title>
+
+    <script src="https://kit.fontawesome.com/3a7225da88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styleForm.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form class="sign-in-form" action="assets/principal.html" method="post" name="dados"
+                onSubmit="return enviardados();">
+                    <h2 class="signin title">Admin</h2>
+
+                    <div class="input-field">
+                        <i class="fas  fa-user"></i>
+                        <input name="tx_nome" pattern="[a-zA-Z]{5}"  type="text" placeholder="Admin"  title="Preencha o campo do Administrador"
+                        required name=nome>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas  fa-lock"></i>
+                        <input name="f_senha" pattern="[a-zA-Z0-9]{6}"  type="password" placeholder="Senha" required name=f_senha pattern="[a-zA-ZO-9]{6}" title="Digite a senha correctamente">
+                    </div>
+                    <input type="submit" value="Entar" class="btn solid" required >
+                </form>
+
+               
+            </div>
+        </div>
+
+
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Software de gestão de clínicas e consultórios</h3>
+                    <p>Tenha à disposição as melhores ferramentas de Gestão Médica e garanta a melhor experiência ao seu paciente.</p>
+                   
+                </div>
+
+                <img src="assets/img/bg-doctora.svg" class="image" alt="Rock">
+            </div>
+
+
+            
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; KITANDA SOFT
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

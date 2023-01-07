@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- Design de KitandaSoft -->
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> OSIPITALISOFT </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- link do Boxiocns para usar icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      
+      <span class="logo_name">Cligest</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Pagina Inicial</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="principal.html">Pagina Inicial</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Cadastro</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Cadastro</a></li>
+          <li><a href="Adicinar_Pacientes.html">Pacientes</a></li>
+          <li><a href="adicionar_Dr.html">Doutores</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Listagem</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Listagem</a></li>
+          <li><a href="listagemPaciente.html">Pacientes</a></li>
+          <li><a href="listar_dr.html">Doutores</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <a href="dados_estatísticos.html">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">EStátistica</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="dados_estatísticos.html">EStátistica</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="sobre.html">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Sobre</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="sobre.html">Sobre</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <a href="../index.html">
+      <i class='bx bx-log-out'> </i>
+      <span class="link_name">Sair</span>
+      </a>
+      <div class="sair"></div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+  </section>
+  <div class="main--content">
+    <div class="overview">
+        <div class="title">
+            <h2 class="section--title"></h2>
+            <select name="date" id="date" class="dropdown">
+                <option value="today">Hoje</option>
+                <option value="lastweek">Semana Passada</option>
+                <option value="lastmonth">Mês Passado</option>
+                <option value="lastyear">Ano Passado</option>
+                <option value="alltime">Tempo Todo</option>
+            </select>
+        </div>
+        <div class="cards">
+            <div class="card card-1">
+                <div class="card--data">
+                    <div class="card--content">
+                        <h5 class="card--title">Total Doutores</h5>
+                        <h1>152</h1>
+                    </div>
+                    <i class="ri-user-2-line card--icon--lg"></i>
+                </div>
+                <div class="card--stats">
+                    <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>65%</span>
+                    <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>10</span>
+                    <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="card--data">
+                    <div class="card--content">
+                        <h5 class="card--title">Total Pacientes</h5>
+                        <h1>1145</h1>
+                    </div>
+                    <i class="ri-user-line card--icon--lg"></i>
+                </div>
+                <div class="card--stats">
+                    <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>82%</span>
+                    <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>230</span>
+                    <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>45</span>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="card--data">
+                    <div class="card--content">
+                        <h5 class="card--title">Horário</h5>
+                        <h1>102</h1>
+                    </div>
+                    <i class="ri-calendar-2-line card--icon--lg"></i>
+                </div>
+                <div class="card--stats">
+                    <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>27%</span>
+                    <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>31</span>
+                    <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>23</span>
+                </div>
+            </div>
+            <div class="card card-4">
+                <div class="card--data">
+                    <div class="card--content">
+                        <h5 class="card--title">Camas Disponíveis</h5>
+                        <h1>15</h1>
+                    </div>
+                    <i class="ri-hotel-bed-line card--icon--lg"></i>
+                </div>
+                <div class="card--stats">
+                    <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>8%</span>
+                    <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>11</span>
+                    <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="doctors">
+        <div class="title">
+            <h2 class="section--title">Nossos Doutores</h2>
+            <div class="doctors--right--btns">
+                <select name="date" id="date" class="dropdown doctor--filter">
+                    <option >Estado</option>
+                    <option value="free">Livre</option>
+                    <option value="scheduled">Ocupado</option>
+                </select>
+                <button class="add"><i class="ri-add-line"></i>Ver Mais</button>
+            </div>
+        </div>
+        <div class="doctors--cards">
+            <a href="#" class="doctor--card">
+                <div class="img--box--cover">
+                    <div class="img--box">
+                        <img src="img/doctor1.jpg" alt="">
+                    </div>
+                </div>
+                <p class="free">Livre</p>
+            </a>
+            <a href="#" class="doctor--card">
+                <div class="img--box--cover">
+                    <div class="img--box">
+                        <img src="img/doctor2.jpg" alt="">
+                    </div>
+                </div>
+                <p class="scheduled">Ocupado</p>
+            </a>
+            <a href="#" class="doctor--card">
+                <div class="img--box--cover">
+                    <div class="img--box">
+                        <img src="img/doctor3.jpg" alt="">
+                    </div>
+                </div>
+                <p class="scheduled">Ocupado</p>
+            </a>
+            <a href="#" class="doctor--card">
+                <div class="img--box--cover">
+                    <div class="img--box">
+                        <img src="img/doctor4.jpg" alt="">
+                    </div>
+                </div>
+                <p class="free">Livre</p>
+            </a>
+            <a href="#" class="doctor--card">
+                <div class="img--box--cover">
+                    <div class="img--box">
+                        <img src="img/doctor5.jpg" alt="">
+                    </div>
+                </div>
+                <p class="scheduled">Ocupado</p>
+            </a>
+            <a href="#" class="doctor--card">
+                <div class="img--box--cover">
+                    <div class="img--box">
+                        <img src="img/doctor6.jpg" alt="">
+                    </div>
+                </div>
+                <p class="free">Livre</p>
+            </a>
+            <a href="#" class="doctor--card">
+                <div class="img--box--cover">
+                    <div class="img--box">
+                        <img src="img/doctor7.jpg" alt="">
+                    </div>
+                </div>
+                <p class="scheduled">Ocupado</p>
+            </a>
+        </div>
+    </div>
+    <div class="recent--patients">
+        <div class="title">
+            <h2 class="section--title">Pacientes Recentes</h2>
+            <button class="add"><i class="ri-add-line"></i><a href="Adicinar_Pacientes.html">Adicionar Pacientes</a> </button>
+        </div>
+        <table>
+          <tr>
+              <td>
+                  <table class="list" id="employeeList">
+                      <thead>
+                          <tr>
+                              <th>Nome</th>
+                              <th>Telefone</th>
+                              <th>Morada</th>
+                              <th>Patologia</th>
+                              <th>Operação</th>
+                          </tr>
+                      </thead>
+                      <!-- to dynamically add record on data submission -->
+                      <tbody>
+  
+                      </tbody>
+                  </table>
+              </td>
+          </tr>
+      </table>
+      
+    </div>
+</div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

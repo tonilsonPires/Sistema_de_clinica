@@ -1,0 +1,29 @@
+Minhas Saudaçoes de acordo ao clima 
+
+mini projecto concluído 
+
+Tecnológias usadas: Html5+Css3+Javascript
+
+=============================TELA DE LOGIN========================================================
+
+[IMPORTANTE]
+Fórmulário foram validados usando regex em Html
+Ao fazer login 
+
+E-mail: Admin
+Senha:1234gx
+
+O formulário do E-mail só admite 5 caracteres de texto, maiúscula ou minúscula Ex: Comer ou Ex: sonho
+
+O formulário de Senha só admite 6 caracteres númericos ou texto Ex:123amor ou Ex: 123456 ou ainda Ex: vIAGEM
+
+===============================FINAL DA TELA LOGIN===================================================
+
+
+===============================SOBRE O MENU=============================
+
+Na página tem um ícone de três barras, ele é responsavel por abrir e fechar o menu
+=======================================================================
+
+AGUARDANDO CRÍTICAS...
+DESDE JÁ OBRIGADO
